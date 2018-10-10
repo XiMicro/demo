@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0"/>
+    <title>有哎艺术团</title>
+    <link rel="stylesheet" href="https://unpkg.com/cube-ui/lib/cube.min.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+
+
+<script src="https://unpkg.com/cube-ui/lib/cube.min.js"></script>
+<script>
+    function fontSize() {
+    var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+    var _html = document.getElementsByTagName('html')[0];
+    var htmlfontsize = 0;
+    view_width > 768 ? htmlfontsize = 50 * 768 / 375 :
+      view_width > 376 ? htmlfontsize = view_width * 48 / 375 : htmlfontsize = view_width * 50 / 375;
+    _html.style.fontSize = (htmlfontsize < 70 ? htmlfontsize : 50) + "px";
+  }
+  fontSize();
+  window.onresize = function() {
+    fontSize();
+  }
+</script>

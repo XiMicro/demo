@@ -1,0 +1,27 @@
+.hello .foot .mint-tabbar {
+    height: 100%;
+}
+.hello .foot .mint-tabbar > .mint-tab-item.is-selected {
+    color: green;
+    background-color: #fff;
+}
+.hello .main .mint-swipe {
+    height: 2.28rem;
+    border: .02rem solid rgba(121, 121, 121, 1);
+    margin-top: .1rem;
+}
+.hello .main .mint-swipe .mint-swipe-indicator {
+    width: .3rem;
+    height: .3rem;
+    border: .02rem solid #333;
+}
+.hello .art .mint-swipe {
+    height: 2.28rem;
+    border: .02rem solid rgba(121, 121, 121, 1);
+    margin-top: .1rem;
+}
+.hello .art .mint-swipe .mint-swipe-indicator {
+    width: .3rem;
+    height: .3rem;
+    border: .02rem solid #333;
+}

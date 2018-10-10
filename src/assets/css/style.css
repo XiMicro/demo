@@ -1,0 +1,200 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+#taobao-best {
+	position: relative;
+	height: 13.2rem;
+}
+
+.show-swiper {
+	z-index: 3;
+	top: 1.6rem;
+}
+
+.show-swiper .swiper-slide {
+	width: 7.9rem;
+}
+
+.show-swiper .swiper-slide:last-child {
+	width: 1.9rem;
+	color: #fff;
+}
+
+.show-swiper .swiper-slide:last-child .icon {
+	width: .64rem;
+	height: .64rem;
+	background: url(../img/more-icon.png) no-repeat center 50%/100% 100%;
+	display: block;
+	float: left;
+	margin-top: 5.2rem;
+	margin-left: .1rem;
+}
+
+.show-swiper .swiper-slide:last-child .text {
+	width: .42rem;
+	font-size: .42rem;
+	margin-top: 3.6rem;
+	margin-left: .2rem;
+	line-height: 1.5;
+	float: left;
+}
+
+.show-swiper .swiper-slide .goods {
+	width: 7.5rem;
+	padding: .2rem;
+	height: 10rem;
+	margin: .8rem 0;
+	border-radius: .16rem;
+	background: url(../img/goods-bg.png);
+}
+
+.goods .c-top {
+	border-bottom: 1px solid #dcdcdd;
+	width: 100%;
+	float: left;
+}
+
+.goods .date {
+	width: 2.38rem;
+	height: 6.36rem;
+	border-right: .02rem solid #adb4ba;
+	float: left;
+}
+
+.goods .date .year {
+	color: #050403;
+	font-weight: bold;
+	text-align: center;
+	margin-top: .7rem;
+}
+
+.goods .date .day {
+	font-size: 1.1rem;
+	text-align: center;
+	margin-top: .1rem;
+	font-weight: bolder;
+	color: #080704;
+}
+
+.goods .date .oldyear {
+	color: #050403;
+	margin-top: .1rem;
+	font-size: .44rem;
+	width: .44rem;
+	line-height: 1.4;
+	margin-left: .6rem;
+	float: left;
+}
+
+.goods .date .oldday {
+	color: #050403;
+	margin-top: .1rem;
+	font-size: .44rem;
+	line-height: 1.4;
+	width: .44rem;
+	margin-right: .6rem;
+	float: right;
+}
+
+.goods .img {
+	width: 5.1rem;
+	float: right;
+}
+
+.goods .img span {
+	color: #1a1918;
+	font-size: .64rem;
+	text-align: center;
+	line-height: 1.2rem;
+	display: block;
+}
+
+.goods .img img {
+	border-top-right-radius: 8px;
+}
+
+.goods .detail {
+	width: 6.7rem;
+	margin: 0 .4rem;
+	float: left;
+}
+
+.goods .detail h2 {
+	font-weight: normal;
+	color: #312f30;
+	font-size: .46rem;
+	margin-bottom: 0;
+}
+
+.goods .detail p {
+	color: #979797;
+	line-height: 1.5;
+	font-size: 18px;
+	margin-top: 8px;
+}
+
+.goods .detail 	ul {
+	padding-left: 0;
+	margin-left: 20px;
+	float: left;
+	margin-top: 0;
+}
+
+.goods .detail 	ul li {
+	float: left;
+	margin-right: 25px;
+	color: #737373;
+}
+
+.goods .detail .btn {
+	float: right;
+	margin-right: -10px;
+	margin-top: -5px;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	border-radius: 20px;
+	background: linear-gradient(90deg,#ffe13c,#ffa70f);
+}
+
+.bg-swiper {
+	position: absolute;
+	width: 100%;
+	height: 640px;
+	top: 0;
+	z-index: 1;
+}
+
+.bg-swiper .swiper-slide {
+	background: #000;
+}
+
+.bg-swiper .swiper-slide img {
+/* filter: blur(5px);性能太卡*/
+	width: 100%;
+	opacity: .5;
+}
+
+.mask {
+	/*clip-path: polygon(0px 80px, 640px 0px, 640px 170px,0px 170px);兼容性差
+	background:#fff;*/
+	background: url(../img/mask.png) no-repeat center bottom/100% auto;
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	height: 170px;
+}
+
+.bottom {
+	position: fixed;
+	bottom: 0;
+	width: 640px;
+}
+
+.bottom img {
+	display: block;
+}			
